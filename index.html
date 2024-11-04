@@ -3,75 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Eligibility Checker</title>
+    <title>HOME PAGE</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        *{
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            box-sizing: border-box;
+            background-color: aqua;
         }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        div{
+            margin: auto;
             text-align: center;
-            width: 300px;
         }
-        input[type="number"] {
-            width: 80%;
-            padding: 8px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        div h1{
+            background-color: gray;
+            color: black;
         }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 4px;
+         a{
+            text-decoration: none;
+            color: gray;
         }
-        button:hover {
-            background-color: #45a049;
-        }
-        #result {
-            margin-top: 15px;
-            font-weight: bold;
+        p{
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Tax Eligibility Checker</h2>
-        <p>Enter your age:</p>
-        <input type="number" id="ageInput" placeholder="Enter age" min="0">
-        <button onclick="checkEligibility()">Check Eligibility</button>
-        <p id="result"></p>
+    <div>
+         <h1>WEEKEND PROJECT</h1>
+  <p>Number One</p>
+         <p><a href="java.html">ASSIGNMENT ONE</a></p> 
+<p>Number Two</p>
+   <p><a href="cv.html">ASSIGNMENT TWO</a></p>
+   <p>Number Three</p>
+    <p><a href="array.html">ASSIGNMENT THREE</a></p>
     </div>
-
-    <script>
-        function checkEligibility() {
-            const age = document.getElementById('ageInput').value;
-            const result = document.getElementById('result');
-
-            if (age === "") {
-                result.textContent = "Please enter a valid age.";
-                result.style.color = "pink";
-            } else if (age >= 18) {
-                result.textContent = "You are eligible to pay tax.";
-                result.style.color = "green";
-            } else {
-                result.textContent = "You are not eligible to pay tax.";
-                result.style.color = "red";
-            }
-        }
-    </script>
+ 
 </body>
 </html>
